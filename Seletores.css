@@ -1,0 +1,29 @@
+/*Seletores*/
+/*Seletor de filho: Tem como função formatar
+as tags "a"(filho) que estejam internas diretamente conectada
+a tag "div"(pai). Mas para funcionar, a segunda "Tag filho" deve estar
+diretamente conectada com a "Tag pai", sendo assim, se houver
+alguma outra Tag entre a "pai" e "filho", o seletor não
+funcionará.*/
+div>a{
+	color: blue;
+}
+/*Seletor de descendente: Funciona de forma semelhante ao
+"Seletor de filho", mas com a diferença de que para ser
+efetivo, essa tag antecessora não precisa estar diretamente
+conectada à descendente para funcionar.*/
+div a{
+	color: yellow;
+}
+/*Seletor de irmão adjacente: Se ambos estiverem dentro da mesma tag, 
+o primeiro elemento "p" após "div" será selecionado, mas o "p" precisa
+estar diretamente precendete à "div" para funcionar.*/
+div+p{
+	color: white;
+}
+/*Seletor de irmão geral: Semelhante ao seletor anterior. A 
+diferença é que nesse caso o "irmão geral" não precisa ser precendente
+direto, mas ainda precisa ser precedente.*/
+div~p{
+	color: purple;
+}
