@@ -1,0 +1,20 @@
+/*Prioridade de formatações (o último sendo a maior prioridade)
+Quanto mais específico for o seletor, maior será sua prioridade.*/
+
+
+/*Formatação genérica*/
+*{
+	color: green;
+}
+/*Formatação específica de elemento*/
+h2{
+	color: yellow;
+}
+/*Formatação de elemento + uma classe*/
+h2.azul{
+	color: blue;
+}
+/*Formatação de elemento + id*/
+h2#rosa{
+	color: pink;
+}
