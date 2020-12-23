@@ -1,0 +1,30 @@
+ul{
+	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul a{
+	/*o "../" Serve para voltar uma pasta*/
+	background: url(../imagens/menu.png) no-repeat;
+	width: 200px;
+	height: 40px;
+	/*ativei o display:block porque o elemento <a> é inline,
+	sendo assim, não da pra configurar o width*/
+	display: block;
+	/*Essa propriedade tem como obejtivo colocar identação,
+	semelhante ao espaço que colocamos nos parágrafos*/
+	text-indent: 30px;
+	/*Determina qual altura da linha*/
+	line-height: 40px;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid red;
+}
+a:hover {
+	color: #FFF;
+	/*Como já continha os dois estágios de background na mesma imagem,
+	a única coisa que precisei fazer foi determinar qual seria a posição
+	de cada um.*/
+	background-position: right;
+}
